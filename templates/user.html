@@ -6,7 +6,7 @@
             <b>
             <div>{{blog.body}}</div>
         </li>
-        <p><a href="/blog?user={{user.username}}">{{blog.user.username}}</a></p>
+        <p>Written by: <a href="/blog?user={{blog.owner.username}}">{{blog.owner.username}}</a></p>
         {% endfor %}
     </ul>
 {% endblock %}
